@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IlanBilgileriActivity">
+
+    <TextView
+        android:id="@+id/ilanBilgileriBaslik"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="İLAN BİLGİLERİ"
+        android:textColor="#9e1e1e"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/ilanAyrintiAdSoyad"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint=" Ad Soyad"
+        android:textSize="18dp"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/baslikAdSoyad" />
+
+    <TextView
+        android:id="@+id/baslikIl"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=" Il:"
+        android:textColor="#9e1e1e"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ilanAyrintiTelefon" />
+
+    <TextView
+        android:id="@+id/ilanAyrintiTelefon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint=" 5300000000"
+        android:textSize="18dp"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/baslikTelefon" />
+
+    <TextView
+        android:id="@+id/ilanAyrintiHastane"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint=" Hastane"
+        android:textSize="18dp"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/baslikHastane" />
+
+    <TextView
+        android:id="@+id/baslikAdSoyad"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="118dp"
+        android:text=" Ad Soyad:"
+        android:textColor="#9e1e1e"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ilanAyrintiIlanBilgisi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint=" İlan Bilgisi"
+        android:textSize="18dp"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/baslikIlanBilgisi" />
+
+    <TextView
+        android:id="@+id/ilanAyrintiIl"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint=" Antalya"
+        android:textSize="18dp"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/baslikIl" />
+
+    <TextView
+        android:id="@+id/baslikIlanBilgisi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=" İlan Bilgisi:"
+        android:textColor="#9e1e1e"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ilanAyrintiIlanTipi" />
+
+    <TextView
+        android:id="@+id/ilanAyrintiIlanTipi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint=" İlan Tipi"
+        android:textSize="18dp"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/baslikIlanTipi" />
+
+    <TextView
+        android:id="@+id/baslikHastane"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=" Hastane:"
+        android:textColor="#9e1e1e"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ilanAyrintiIl" />
+
+    <TextView
+        android:id="@+id/baslikIlanTipi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=" İlan Tipi:"
+        android:textColor="#9e1e1e"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ilanAyrintiHastane" />
+
+    <TextView
+        android:id="@+id/baslikTelefon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=" Telefon:"
+        android:textColor="#9e1e1e"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ilanAyrintiAdSoyad" />
+
+    <Button
+        android:id="@+id/btnKisiyiAra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#9e1e1e"
+        android:text="       Ara        "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnKonumuGor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="76dp"
+        android:backgroundTint="#9e1e1e"
+        android:text="Konumu Gör"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

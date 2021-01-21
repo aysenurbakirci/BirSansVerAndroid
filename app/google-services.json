@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "339688212201",
+    "project_id": "birsansver-7e058",
+    "storage_bucket": "birsansver-7e058.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:339688212201:android:0c42b51ffc43a9ca805278",
+        "android_client_info": {
+          "package_name": "com.example.birsansverapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "339688212201-mif6e67c7dum9qn46h7con14ckm9lvb4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACSm7-ZxAXk3a2t2Ar8IXht7wJXnCD7gg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "339688212201-mif6e67c7dum9qn46h7con14ckm9lvb4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "339688212201-ohrea222o7r4dq64fejc1mu5tdrkcuhv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "aysenurbakircii.BirSansVerIOS"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

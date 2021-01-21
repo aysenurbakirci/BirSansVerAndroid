@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/baslikbir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="220dp"
+        android:gravity="center"
+        android:text="BİR ŞANS"
+        android:textColor="#9e1e1e"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnGirisYapEkran"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/baslikiki"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="VER"
+        android:textColor="#9e1e1e"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/baslikbir" />
+
+    <Button
+        android:id="@+id/btnKayıtOlEkran"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="176dp"
+        android:backgroundTint="#9e1e1e"
+        android:text="KAYIT OL"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/sifremiUnuttum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGirisYapEkran" />
+
+    <Button
+        android:id="@+id/btnGirisYapEkran"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="79dp"
+        android:backgroundTint="#9e1e1e"
+        android:text="GİRİŞ YAP"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnKayıtOlEkran"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/baslikbir" />
+
+    <TextView
+        android:id="@+id/nasilKullanilir"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="Nasıl Kullanılır?"
+        android:textColor="#9e1e1e"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sifremiUnuttum" />
+
+    <TextView
+        android:id="@+id/sifremiUnuttum"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:gravity="center"
+        android:text="Şifremi Unuttum"
+        android:textColor="#9e1e1e"
+        app:layout_constraintBottom_toTopOf="@+id/nasilKullanilir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnKayıtOlEkran" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

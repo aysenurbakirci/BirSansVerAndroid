@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".YeniIlanActivity">
+
+    <TextView
+        android:id="@+id/idbaslikYeniIlan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="İLAN PAYLAŞ"
+        android:textColor="#9e1e1e"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/baslikAdSoyad"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text=" Ad Soyad:"
+        android:textColor="#9e1e1e"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idbaslikYeniIlan" />
+
+    <EditText
+        android:id="@+id/ilanPaylasAdSoyad"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint=" Ad Soyad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/baslikAdSoyad" />
+
+    <TextView
+        android:id="@+id/baslikTelefon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=" Telefon:"
+        android:textColor="#9e1e1e"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ilanPaylasAdSoyad" />
+
+    <EditText
+        android:id="@+id/ilanPaylasIl"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint=" Antalya"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/baslikIl" />
+
+    <EditText
+        android:id="@+id/ilanPaylasTelefon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint=" 5300000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/baslikTelefon" />
+
+    <TextView
+        android:id="@+id/baslikIl"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=" Il:"
+        android:textColor="#9e1e1e"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ilanPaylasTelefon" />
+
+    <TextView
+        android:id="@+id/baslikHastane"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=" Hastane:"
+        android:textColor="#9e1e1e"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ilanPaylasIl" />
+
+    <EditText
+        android:id="@+id/ilanPaylasHastane"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint=" Hastane"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/baslikHastane" />
+
+    <TextView
+        android:id="@+id/baslikIlanTipi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=" İlan Tipi:"
+        android:textColor="#9e1e1e"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ilanPaylasHastane" />
+
+    <RadioGroup
+        android:id="@+id/ilanTipiSecPaylas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/baslikIlanTipi"
+        app:layout_constraintTop_toBottomOf="@+id/baslikIlanTipi">
+
+        <RadioButton
+            android:id="@+id/rdKanTipIlanPaylas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kan İlanı"
+            android:textColor="#9e1e1e" />
+
+        <RadioButton
+            android:id="@+id/rdIlacTipIlanPaylas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="İlaç İlanı"
+            android:textColor="#9e1e1e" />
+
+        <RadioButton
+            android:id="@+id/rdIlikTipIlanPaylas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="İlik İlanı"
+            android:textColor="#9e1e1e" />
+
+        <RadioButton
+            android:id="@+id/rdMalzemeTipIlanPaylas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Malzeme İlanı"
+            android:textColor="#9e1e1e" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/baslikIlanBilgisi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=" İlan Bilgisi:"
+        android:textColor="#9e1e1e"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ilanTipiSecPaylas" />
+
+    <EditText
+        android:id="@+id/ilanPaylasIlanBilgisi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint=" İlan Bilgisi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/baslikIlanBilgisi" />
+
+    <Button
+        android:id="@+id/btnYeniIlanPaylas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#9e1e1e"
+        android:text="Paylaş"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
